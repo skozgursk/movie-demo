@@ -9,9 +9,9 @@ Material UI Framework used.\
 Test cases not covered.\
 
 ![search](https://github.com/skozgursk/movie-demo/blob/master/public/screenshots/s1.png)
-search.\
+search
 ![details](https://github.com/skozgursk/movie-demo/blob/master/public/screenshots/s2.png)
-details.\
+details
 
 ## Available Scripts
 
