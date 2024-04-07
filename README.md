@@ -8,9 +8,9 @@ Scss with BEM methods used for the project.\
 Material UI Framework used.\
 Test cases not covered.\
 
-![search](https://github.com/skozgursk/dh-pub-demo/blob/master/public/screenshots/s1.png)
+![search](https://github.com/skozgursk/movie-demo/blob/master/public/screenshots/s1.png)
 search.\
-![details](https://github.com/skozgursk/dh-pub-demo/blob/master/public/screenshots/s2.png)
+![details](https://github.com/skozgursk/movie-demo/blob/master/public/screenshots/s2.png)
 details.\
 
 ## Available Scripts
