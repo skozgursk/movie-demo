@@ -1,0 +1,153 @@
+@import '../../scss//abstracts/mixins';
+
+.__ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    color: #fff;
+
+    &error {
+        flex: 1;
+    }
+
+    &filters {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 5px 20px 5px;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: start;
+        gap: 24px;
+        align-items: center;
+
+        &__year {
+            background-color: #fff;
+            min-width: 200px;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        &__type {
+            background-color: #fff;
+            min-width: 200px;
+            border-radius: 4px;
+        }
+
+    }
+
+    &results {
+        flex: 1;
+        max-height: calc(100% - 150px);
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        @include apply-scroll();
+        padding-right: 5px;
+        box-sizing: border-box;
+    }
+
+    &link {
+        text-decoration: none;
+        background-color: #f8f5f5;
+        border: solid 2px #cecece;
+        border-radius: 8px;
+        padding: 12px 8px;
+        display: flex;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    &poster {
+        max-height: 120px;
+        overflow: hidden;
+        box-sizing: border-box;
+        object-fit: contain;
+        border-radius: 8px;
+        border: white solid 2px;
+        width: unset !important;
+
+        &__container,
+        &__container>div {
+            min-width: 120px;
+
+            width: calc(100% - 70px) !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &info {
+        &__container {
+            svg {
+                margin-right: 20px;
+            }
+
+            flex: 1;
+
+            h5 {
+                width: 100%;
+                white-space: initial;
+
+
+            }
+
+            display: flex;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: start;
+            box-sizing: border-box !important;
+        }
+    }
+
+    &pagination {
+        padding-top: 20px;
+
+        li>div {
+            color: #fff;
+        }
+
+        button {
+            opacity: 0.5 !important;
+            background-color: #fff !important;
+
+            &[aria-current="true"] {
+                opacity: unset !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .__ {
+        &info {
+            &__container {
+                h5 {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        &filters {
+            justify-content: space-between;
+            gap: 0px;
+
+            &__year {
+                min-width: calc(50vw - 70px);
+            }
+
+            &__type {
+                min-width: calc(50vw - 70px);
+            }
+        }
+    }
+}

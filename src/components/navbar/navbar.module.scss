@@ -1,0 +1,55 @@
+.__ {
+    background-color: black !important;
+    border-radius: 0px !important;
+
+    &icon {
+        margin-right: 20px;
+    }
+
+    a {
+        border-radius: 8px;
+        border: solid 1px #fff;
+        padding: 8px 16px;
+    }
+
+    &input {
+        &__container {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            margin: 8px;
+
+            >div {
+                width: 100%;
+            }
+
+            fieldset {
+                border: none;
+            }
+        }
+    }
+
+    input {
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .__ {
+        &input {
+            &__container {
+                margin: 8px 40px;
+
+            }
+        }
+    }
+}

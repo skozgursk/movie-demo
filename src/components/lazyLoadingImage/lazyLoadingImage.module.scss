@@ -1,0 +1,25 @@
+.__ {
+    width: 100%;
+    position: relative;
+    min-height: 120px;
+    min-width: 120px;
+
+    &image {
+        width: 100%;
+    }
+
+    &error {
+        position: absolute;
+        background-color: gray;
+        height: 100%;
+        border-radius: 8px;
+        margin: 0px 10px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+}
